@@ -27,10 +27,10 @@ return [
     ],
 
     "rules" => [
-        "blog.title" => ["string", "max:191", "required"],
-        "blog.slug" => ["nullable", "string", "max:191",],
-        "blog.description" => ["string", "required"],
-        "blog.content" => ["string", "required"],
-        "picture" => ["image", "sometimes", "required"]
+        "blog.title" => ["required", "string", "max:191"],
+        "blog.slug" => ["required", "nullable", "string", "max:191",],
+        "blog.description" => ["required", "string"],
+        "blog.content" => ["required", "string"],
+        "picture" => ["image", "sometimes", "nullable"]
     ],
 ];

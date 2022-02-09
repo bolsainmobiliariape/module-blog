@@ -29,7 +29,7 @@
                                     {{ $blog->description }}
                                 </x-table.cell>
                                 <x-table.cell>
-                                    <a href="{{ route('dashboard.blog.edit', $blog->id) }}" class="px-4 py-2 text-md bg-blue-500 text-white rounded-md hover:bg-green-700">Ver</a>
+                                    <a href="{{ route('dashboard.blog.edit', $blog->id) }}" class="px-4 py-2 text-md bg-blue-500 text-white rounded-md hover:bg-green-700">Editar</a>
 
                                     <button wire:click="$set('idDelete', {{$blog->id}})" x-on:click="openModal = true" class="appearance-none text-md px-4 py-1 bg-red-500 text-white rounded-md hover:bg-red-700">Delete</button>
                                     
