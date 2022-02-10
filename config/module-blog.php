@@ -28,7 +28,7 @@ return [
 
     "rules" => [
         "blog.title" => ["required", "string", "max:191"],
-        "blog.slug" => ["required", "nullable", "string", "max:191",],
+        "blog.slug" => ["nullable", "string", "max:191",],
         "blog.description" => ["required", "string"],
         "blog.content" => ["required", "string"],
         "picture" => ["image", "sometimes", "nullable"]
