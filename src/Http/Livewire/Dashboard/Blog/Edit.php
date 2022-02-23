@@ -16,7 +16,7 @@ class Edit extends Component
 
     public $picture;
 
-    public function mount($blog)
+    public function mount(Blog $blog)
     {
         $this->blog = $blog;
     }
