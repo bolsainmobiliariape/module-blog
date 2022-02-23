@@ -29,6 +29,7 @@ class ModuleBlogServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_module_blog_table')
-            ->hasRoute('blog');
+            ->hasRoute('blog')
+            ->hasCommand(ModuleBlogCommand::class);
     }
 }
